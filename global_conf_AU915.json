@@ -77,7 +77,7 @@
         },
         "chan_FSK": {
             /* FSK 100kbps channel, 924.8 MHz */
-            "enable": false,
+            "enable": true,
             "radio": 1,
             "if": 500000,
             "bandwidth": 250000,
