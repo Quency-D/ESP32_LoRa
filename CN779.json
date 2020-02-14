@@ -2,77 +2,88 @@
     "SX1301_conf": {
         "lorawan_public": true,
         "clksrc": 1, /* radio_1 provides clock to concentrator */
+        "antenna_gain": 0, /* antenna gain, in dBi */
         "radio_0": {
             "enable": true,
-            "type": "SX1255",
+            "type": "SX1257",
             "freq": 779700000,
-            "rssi_offset": -166.0,
+            "rssi_offset": -164.0,
             "tx_enable": true,
-	     "tx_freq_min":779000000,
-	     "tx_freq_max":782000000
+            "tx_freq_min": 778000000,
+            "tx_freq_max": 782000000
         },
         "radio_1": {
             "enable": true,
-            "type": "SX1255",
+            "type": "SX1257",
             "freq": 780700000,
-            "rssi_offset": -166.0,
-            "tx_enable": true
+            "rssi_offset": -164.0,
+            "tx_enable": false
         },
         "chan_multiSF_0": {
+            /* Lora MAC channel, 125kHz, all SF, 779.5 MHz */
             "enable": true,
             "radio": 0,
             "if": -200000
         },
         "chan_multiSF_1": {
+            /* Lora MAC channel, 125kHz, all SF, 779.7 MHz */
             "enable": true,
             "radio": 0,
             "if": 0
         },
         "chan_multiSF_2": {
+            /* Lora MAC channel, 125kHz, all SF, 779.9 MHz */
             "enable": true,
             "radio": 0,
             "if": 200000
         },
         "chan_multiSF_3": {
+            /* Lora MAC channel, 125kHz, all SF, 780.5 MHz */
             "enable": true,
             "radio": 1,
             "if": -200000
         },
         "chan_multiSF_4": {
+            /* Lora MAC channel, 125kHz, all SF, 780.7 MHz */
             "enable": true,
             "radio": 1,
             "if": 0
         },
         "chan_multiSF_5": {
+            /* Lora MAC channel, 125kHz, all SF, 780.9 MHz */
             "enable": true,
-            "radio":1,
+            "radio": 1,
             "if": 200000
         },
         "chan_multiSF_6": {
-            "enable": false,
+            /* Lora MAC channel, 125kHz, all SF, 903.5 MHz */
+            "enable":false,
             "radio": 1,
             "if": 100000
         },
         "chan_multiSF_7": {
+            /* Lora MAC channel, 125kHz, all SF, 903.7 MHz */
             "enable": false,
-            "radio": 0,
+            "radio": 1,
             "if": 300000
         },
         "chan_Lora_std": {
+            /* Lora MAC channel, 500kHz, SF8, 903.0 MHz */
             "enable": false,
-            "radio": 1,
-            "if": -200000,
-            "bandwidth": 250000,
-            "spread_factor": 7
+            "radio": 0,
+            "if": 300000,
+            "bandwidth": 500000,
+            "spread_factor": 8
         },
         "chan_FSK": {
+            /* FSK 100kbps channel, 903.0 MHz */
             "enable": false,
-            "radio": 1,
+            "radio": 0,
             "if": 300000,
-            "bandwidth": 125000,
-            "datarate": 50000
+            "bandwidth": 250000,
+            "datarate": 100000
         },
-        "tx_lut_0": {
+"tx_lut_0": {
             /* TX gain table, index 0 */
             "pa_gain": 0,
             "mix_gain": 8,
@@ -187,7 +198,7 @@
     },
 
     "gateway_conf": {
-        "gateway_ID": "393431314c002500",
+        "gateway_ID": "3537323928004f00",
         /* change with default server address/ports, or overwrite in local_conf.json */
         "server_address": "192.168.43.158",
         "serv_port_up": 1700,
@@ -199,9 +210,6 @@
         /* forward only valid packets */
         "forward_crc_valid": true,
         "forward_crc_error": false,
-        "forward_crc_disabled": false,
-        /* GPS configuration */
-        "gps_tty_path": "/dev/nmea"
+        "forward_crc_disabled": false
     }
 }
-
