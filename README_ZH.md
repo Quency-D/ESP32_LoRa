@@ -153,9 +153,9 @@ typedef enum
 elif [ $DATA_SELECTION -eq 3 ];then
     echo "CONFIG_BMP180_DATA=y" >> $K_CONFIGFILE
 ```
-- 上面这一句表示同步 C 配置文件去图形界面配置文件。
+- configini_to_kconfig.sh 会同步 C 配置文件去图形界面配置文件。
 4. 此次添加的 bmp180 配置选项不需要去修改 project/config/kconfig_lib/kconfig_to_configini.sh 文件，因为之前的同步选项已经匹配了 bmp180 。
-- 上面这一句表示同步图形界面配置文件去 C 配置文件。
+- kconfig_to_configini.sh 会同步图形界面配置文件去 C 配置文件。
 
 5. 在  project/main/main.c 里面添加读取 config.ini 文件。
 ```c
