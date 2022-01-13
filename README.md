@@ -1,5 +1,5 @@
 # DIY electronic work card
-English | [简体中文](##简体中文)
+English | [简体中文](#DIY电子工牌)
 ## Development environment setup
 1. [Build the Arduino development environment.](https://heltec-automation.readthedocs.io/zh_CN/latest/general/how_to_install_git_and_arduino.html)   
 2. [Install the development framework.](https://heltec-automation.readthedocs.io/zh_CN/latest/esp32/quick_start.html#git)   
@@ -29,7 +29,7 @@ English | [简体中文](##简体中文)
 5. Open the Tencent Lianlian applet in WeChat, scan the QR code on the Tencent Cloud website (product development -> product name -> device debugging -> QR code) to enter the Tencent Lianlian applet delivery interface (as shown in the figure: img/ Tencent Lianlian applet interface.jpg). After connecting lora to the network, it can be distributed and displayed on the ink screen.        
 Note: You can also parse the QR code above, and then configure it through the serial port and display it on the ink screen. Then use the Tencent Lianlian applet to scan.
 
-## 简体中文
+# DIY电子工牌
 ## 开发环境搭建
 1. [搭建Arduino开发环境。](https://heltec-automation.readthedocs.io/zh_CN/latest/general/how_to_install_git_and_arduino.html)   
 2. [安装开发框架。](https://heltec-automation.readthedocs.io/zh_CN/latest/esp32/quick_start.html#git)   
