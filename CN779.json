@@ -212,6 +212,7 @@
         "forward_crc_error": false,
         "forward_crc_disabled": false,
         "test_feature": false,
-        "test_feature1": true
+        "test_feature1": true,
+        "test_feature2": false
     }
 }
